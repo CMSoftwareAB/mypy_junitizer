@@ -10,6 +10,6 @@ setup(
     description="Script for converting output from MyPy to Junit XML format",
     packages=find_packages(),
     python_requires=">=3.9",
-    entry_points={"console_scripts": ["mypy_junitizer = mypy_junitizer:main"]},
+    entry_points={"console_scripts": ["mypy_junitizer = mypy_junitizer.mypy_junitizer:main"]},
     install_requires=['junit-xml']
 )

@@ -23,4 +23,5 @@ setup(
     py_modules=["mypy_junitizer"],
     python_requires=">=3.5",
     entry_points={"console_scripts": ["mypy_junitizer = mypy_junitizer:main"]},
+    install_requires=['junit-xml']
 )

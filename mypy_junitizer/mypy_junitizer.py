@@ -28,8 +28,11 @@ def process_lines(lines: List[str]) -> None:
             tc = TestCase(f'no err', f'no err', 0)
             test_cases.append(tc)
             break
-
-        file_, line, type_, *message = line.split(":")
+        try:
+            file_, line, type_, *message = line.split(":")
+        except ValueError:
+            print(line)
+            return None
         type_ = type_.strip()
 
         if type_ == "error":

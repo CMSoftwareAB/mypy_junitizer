@@ -2,7 +2,7 @@
 plugins = ["pydantic.mypy", "sqlmypy"]
 mypy_path = [".venv/src/cm-api", ".venv/src/cm-intercom", ".venv/src/cm-constants", ".venv/src/cm-utils"]
 follow_imports = "silent"
-install-types = true
+install_types = true
 non_interactive = true
 disallow_untyped_defs = true
 #disallow_any_unimported = true
